@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>$title</title>
+  $styles
+</head>
+<body>
+  <h1>$title</h1>
+  <h2><script>document.write('$' + 'title');</script></h2>
+  <p>
+    <script>document.write('$' + 'title');</script>
+    is replaced by project name.<br />
+    For example "$title".
+  </p>
+  <h2><script>document.write('$' + 'styles');</script></h2>
+  <p>
+    <script>document.write('$' + 'styles');</script>
+    is replaced by style tags.<br />
+    For example <input type="button" value="styles" onclick="alert(document.querySelector('#styles').innerHTML)" />.
+  </p>
+  <span id="styles">$styles</span>
+
+  <h2><script>document.write('$' + 'scripts');</script></h2>
+  <p>
+    <script>document.write('$' + 'scripts');</script>
+    is replaced by script tags.<br />
+    For example <input type="button" value="scripts" onclick="alert(document.querySelector('#scripts').innerHTML)" />.
+  </p>
+  <span id="scripts">$scripts</span>
+
+  <h2><script>document.write('$' + 'ext');</script></h2>
+  <p>
+    <script>document.write('$' + 'ext');</script>
+    is replaced by ext dir.<br />
+    For example "$ext".
+  </p>
+    
+  $scripts
+</body>
+</html>
